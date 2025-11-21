@@ -33,13 +33,13 @@ public class Final_part_3 {
         // Prompt user to enter credentials
 
 
- String username = JOptionPane.showInputDialog(null, "Please enter your username:", "Username", JOptionPane.QUESTION_MESSAGE);
+ String username = JOptionPane.showInputDialog(null, "Please enter your username( must be less than 5 characters & an underscore):", "Username", JOptionPane.QUESTION_MESSAGE);
 
 
-  String PasswordComplexity = JOptionPane.showInputDialog(null, "Please enter your password:", "Password", JOptionPane.QUESTION_MESSAGE);
+  String PasswordComplexity = JOptionPane.showInputDialog(null, "Please enter your password (must contain  8 characters,a symbol, a capital):", "Password", JOptionPane.QUESTION_MESSAGE);
 
 
-  String CellPhoneNumber = JOptionPane.showInputDialog(null, "Please enter your cell phone number:", "Number", JOptionPane.QUESTION_MESSAGE);
+  String CellPhoneNumber = JOptionPane.showInputDialog(null, "Please enter your cell phone number(Start with +27):", "Number", JOptionPane.QUESTION_MESSAGE);
 
              // Register the user
   String registrationResult = Login_Class.registerUser(username, PasswordComplexity,CellPhoneNumber);
